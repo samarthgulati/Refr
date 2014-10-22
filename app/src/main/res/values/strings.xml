@@ -9,5 +9,6 @@
     <string name="title_activity_select_reviewer">selectReviewer</string>
     <string name="title_activity_notifications">notifications</string>
     <string name="template2">template2</string>
+    <string name="title_activity_balh">balh</string>
 
 </resources>

@@ -2,12 +2,8 @@ package com.refr.www;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-
-import static com.refr.www.R.id.listView;
 
 
 public class selectReviewer extends Activity {
@@ -33,7 +29,7 @@ public class selectReviewer extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_reviewer);
-        lv = (ListView) findViewById(listView);
+        ListView lv = (ListView) findViewById(R.id.listview);
         ArrayAdapter<String> reviewerAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1 ,names);
         lv.setAdapter(reviewerAdapter);
     }
