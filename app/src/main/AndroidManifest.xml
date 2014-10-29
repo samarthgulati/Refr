@@ -9,7 +9,9 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name" >
+        android:logo="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Refr">
         <activity
             android:name=".selectTemplate"
             android:label="Select Template" >
@@ -17,25 +19,33 @@
         <activity
             android:name=".preview"
             android:label="Preview" >
+
         </activity>
         <activity
             android:name=".selectReviewer"
             android:label="Select Reviewer" >
 
         </activity>
+
+        <activity
+            android:name=".ResumeList"
+            android:label="My Resumes" >
+
+        </activity>
+
         <activity
             android:name=".notifications"
             android:label="Notifications" >
         </activity>
-
         <activity
             android:name=".Login"
             android:label="Log In" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
     </application>
 

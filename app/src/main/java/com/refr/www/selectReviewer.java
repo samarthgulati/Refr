@@ -28,9 +28,11 @@ public class selectReviewer extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_select_reviewer);
         ListView lv = (ListView) findViewById(R.id.listview);
         ArrayAdapter<String> reviewerAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1 ,names);
         lv.setAdapter(reviewerAdapter);
+
     }
 }

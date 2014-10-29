@@ -70,7 +70,9 @@ public boolean hasStableIds(){
 public View getGroupView(int i,boolean b,View view,ViewGroup viewGroup){
     TextView tv=new TextView(previewContext);
     tv.setText(categories[i]);
-    tv.setPadding(30,0,0,0);
+    tv.setTextSize(20);
+    //tv.setBackgroundResource(R.drawable.card);
+    tv.setPadding(30,10,5,10);
     return tv;
 
         }
@@ -79,7 +81,7 @@ public View getGroupView(int i,boolean b,View view,ViewGroup viewGroup){
 public View getChildView(int i,int i2,boolean b,View view,ViewGroup viewGroup){
     TextView tv=new TextView(previewContext);
     tv.setText(details[i][i2]);
-    tv.setPadding(10,0,0,0);
+    tv.setPadding(40,5,5,5);
     return tv;
 
         }
